@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Turingly — Turing Machine Simulator for macOS</title>
+  <meta name="description" content="Turingly: An uncompromising, deterministic Turing machine simulator built natively for macOS. 40 verified algorithms, step-by-step execution, and zero telemetry.">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="turingly.css">
+</head>
+<body class="turingly-home">
+
+  <div class="container">
+
+    <!-- Top Status Bar -->
+    <header class="status-bar">
+      <div class="status-left">
+        <span>Turingly // macOS 15.6+</span>
+        <span class="status-badge">100% offline</span>
+      </div>
+      <nav>
+        <a href="#features">Features</a>
+        <a href="#privacy">Privacy</a>
+        <a href="support.html">Support</a>
+        <a href="mailto:support@michaltalaga.me">Contact</a>
+      </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+      <div class="brutal-card">
+        <div class="app-header-brand">
+          <img src="icon.png" class="app-icon-img" alt="Turingly App Icon" width="96" height="96">
+          <div>
+            <span class="project-meta">Computation suite for macOS</span>
+            <span class="badge accent">Version 1.0</span>
+          </div>
+        </div>
+
+        <h1 class="hero-text">Turingly</h1>
+
+        <p class="hero-lead">
+          A native, deterministic Turing machine simulator engineered specifically for macOS. Designed for researchers, educators, students, and engineers seeking visual tape inspection, cycle-by-cycle execution, custom transition table authoring, and complete privacy by default.
+        </p>
+
+        <div class="brutal-btn-row">
+          <a role="button" class="brutal-btn disabled" aria-disabled="true" title="Coming soon to the Mac App Store">
+            Download on the App Store (coming soon)
+          </a>
+          <a href="support.html" class="brutal-btn primary">
+            Support &amp; contact
+          </a>
+          <a href="privacy.html" class="brutal-btn">
+            Privacy notice
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features">
+      <div class="section-title">
+        <span>01 // Features</span>
+      </div>
+
+      <div class="grid-3">
+        <div class="brutal-card">
+          <span class="badge accent">Catalog</span>
+          <h3>40 built-in algorithms</h3>
+          <p>
+            An exhaustive curriculum of pre-verified machines spanning foundational tape operations, binary and unary arithmetic (addition, multiplication, two's complement), string manipulation (palindrome detection, parenthesis matching), and classic decision problems.
+          </p>
+        </div>
+
+        <div class="brutal-card">
+          <span class="badge dark">Execution</span>
+          <h3>Step and continuous run</h3>
+          <p>
+            Inspect state transitions step-by-step with the manual cycle stepper or engage automated continuous simulation with adjustable clock speed. Features immediate deterministic halting detection when no rule matches.
+          </p>
+        </div>
+
+        <div class="brutal-card">
+          <span class="badge accent">Authoring</span>
+          <h3>Transition table editor</h3>
+          <p>
+            Create and edit custom machines directly through an interactive transition matrix. Turingly automatically indexes states, validates alphabet constraints, and flags incomplete transitions before execution begins.
+          </p>
+        </div>
+
+        <div class="brutal-card">
+          <span class="badge dark">Storage</span>
+          <h3>Portable archives</h3>
+          <p>
+            Export and import machine configurations and full catalogs using clean, human-readable JSON files. Back up your algorithms and share them with colleagues effortlessly using native macOS file pickers.
+          </p>
+        </div>
+
+        <div class="brutal-card">
+          <span class="badge accent">System</span>
+          <h3>Native macOS design</h3>
+          <p>
+            Crafted exclusively in Swift and SwiftUI following Apple Human Interface Guidelines. Features native Dark Mode and Light Mode, responsive keyboard shortcuts, and zero non-Apple runtime overhead.
+          </p>
+        </div>
+
+        <div class="brutal-card">
+          <span class="badge dark">Integrity</span>
+          <h3>Zero data collection</h3>
+          <p>
+            Completely self-contained and sandboxed. Turingly does not contain analytics frameworks, advertising trackers, crash telemetry SDKs, or background network connections. All computation stays on your device.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Privacy Section -->
+    <section id="privacy">
+      <div class="section-title">
+        <span>02 // Privacy</span>
+      </div>
+
+      <div class="brutal-card prose">
+        <span class="project-meta">Privacy by design</span>
+        <h3>Zero data collection commitment</h3>
+        <p>
+          Turingly is designed with total privacy as a foundational principle. The application does not collect, record, process, store on external servers, or transmit any personal information, usage metrics, or machine data whatsoever.
+        </p>
+
+        <h3>Local storage &amp; isolation</h3>
+        <p>
+          All user machines, transition tables, execution histories, and custom tape inputs reside exclusively within the application's local SwiftData store. File interactions (exporting or importing machine archives) take place exclusively through standard macOS open and save dialogs initiated by the user.
+        </p>
+
+        <div class="brutal-btn-row">
+          <a href="privacy.html" class="brutal-btn primary">View full privacy policy &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support">
+      <div class="section-title">
+        <span>03 // Support &amp; contact</span>
+      </div>
+
+      <div class="brutal-card">
+        <span class="project-meta">Direct developer support</span>
+        <p style="margin-bottom: 25px;">
+          Need technical assistance, have a question regarding Turing machine mechanics, or want to suggest a new algorithm for our library? We provide direct email support for all users.
+        </p>
+
+        <div class="faq-item">
+          <h3>How do I run a machine?</h3>
+          <p>
+            Open the <strong>Library</strong> view from the toolbar, pick any of the 40 pre-verified machines, and select <strong>Load machine</strong>. Input the starting tape symbols conforming to the machine's alphabet, then press <strong>Start</strong> for automatic execution or <strong>Step</strong> to step forward one cycle at a time.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>Why did the machine halt?</h3>
+          <p>
+            In deterministic Turing machine theory, when the current state and scanned symbol do not match any rule in the transition table, the computation successfully halts. This is the intended termination behavior for all standard algorithms.
+          </p>
+        </div>
+
+        <div class="brutal-btn-row" style="margin-top: 30px;">
+          <a href="mailto:support@michaltalaga.me?subject=Turingly%20Support%20Request" class="brutal-btn primary">Send email &rarr;</a>
+          <a href="support.html" class="brutal-btn">Visit support &amp; FAQ &rarr;</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 Michał Talaga. All rights reserved.</p>
+      <div class="social-links">
+        <a href="#features">Features</a>
+        <a href="privacy.html">Privacy policy</a>
+        <a href="support.html">Support &amp; FAQ</a>
+        <a href="mailto:support@michaltalaga.me">Contact email</a>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>

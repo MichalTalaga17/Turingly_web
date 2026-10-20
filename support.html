@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support &amp; FAQ // Turingly</title>
+  <meta name="description" content="Technical support, troubleshooting, and contact for Turingly: Turing Machine Simulator for macOS.">
+  <link rel="icon" type="image/png" href="icon.png">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="turingly.css">
+</head>
+<body>
+
+  <div class="container">
+
+    <!-- Top Status Bar -->
+    <header class="status-bar">
+      <div class="status-left">
+        <a href="index.html">&larr; BACK TO TURINGLY</a>
+        <span class="status-badge">SUPPORT</span>
+      </div>
+      <nav>
+        <a href="index.html">HOME</a>
+        <a href="privacy.html">PRIVACY</a>
+        <a href="mailto:support@michaltalaga.me">EMAIL SUPPORT</a>
+      </nav>
+    </header>
+
+    <section>
+      <div class="section-title">
+        <span>SUPPORT &amp; CONTACT</span>
+      </div>
+
+      <!-- Direct Contact Card -->
+      <div class="brutal-card">
+        <span class="project-meta">// DIRECT DEVELOPER ASSISTANCE &bull; APP STORE GUIDELINE 1.5</span>
+        <h3>Need Help or Found an Issue?</h3>
+        <p style="margin-top: 15px;">
+          Turingly is maintained directly by developer <strong>Michał Talaga</strong>. If you experience unexpected behavior, have questions about Turing machine execution, or want to suggest algorithms for future updates, please get in touch via email.
+        </p>
+
+        <div style="margin: 25px 0; padding: 20px; border: var(--border-width) solid var(--fg); background: rgba(0, 136, 255, 0.08);">
+          <span class="badge accent">DIRECT SUPPORT INBOX</span>
+          <p style="font-size: 1.15rem; font-weight: 800; margin-bottom: 8px;">
+            support@michaltalaga.me
+          </p>
+          <p style="margin-bottom: 0; font-size: 0.9rem; opacity: 0.85;">
+            Typical response time: within 24–48 hours. Please include your macOS version and details of the simulation.
+          </p>
+        </div>
+
+        <div class="brutal-btn-row">
+          <a href="mailto:support@michaltalaga.me?subject=Turingly%20Support%20Request" class="brutal-btn primary">
+            SEND EMAIL TO DEVELOPER &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- FAQ Section -->
+      <div class="brutal-card">
+        <span class="project-meta">// FREQUENTLY ASKED QUESTIONS</span>
+        <h3 style="margin-bottom: 25px;">Technical FAQ &amp; Guide</h3>
+
+        <div class="faq-item">
+          <h3>01 // How do I load and execute an algorithm?</h3>
+          <p>
+            Open the <strong>Library</strong> view using the toolbar button. Browse our catalog of 40 pre-verified machines, select the one you wish to test, and click <strong>Load machine</strong>. In the simulation view, enter an initial tape sequence conforming to the active alphabet, then press <strong>Start</strong> for continuous animation or <strong>Step</strong> to advance one cycle at a time.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>02 // Why did my machine halt unexpectedly?</h3>
+          <p>
+            In deterministic Turing machines, the engine checks the current state and the tape character underneath the read head. If no transition rule is defined in the table for this specific (state, symbol) tuple, execution halts immediately. In classical computability theory, halting represents the intended completion of an algorithm.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>03 // How do I back up, export, or share machines?</h3>
+          <p>
+            All custom algorithms are saved in your app's isolated local SwiftData store. You can create portable backups at any time by clicking <strong>Export</strong> in the toolbar to save standard <code>.json</code> archives. To restore machines on another Mac, use <strong>Import</strong>.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>04 // How does Turingly handle blank tape cells?</h3>
+          <p>
+            The tape is logically infinite in both directions. Unwritten cells are filled with the blank symbol <code>_</code>. You do not need to explicitly declare <code>_</code> in your alphabet list; the engine automatically handles it as an intrinsic blank marker.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>05 // Does Turingly require internet access?</h3>
+          <p>
+            No. Turingly operates 100% offline. It contains no network listeners, no outbound telemetry sockets, and no remote dependencies. All computations and file saves occur strictly on your local Mac.
+          </p>
+        </div>
+
+        <div class="faq-item">
+          <h3>06 // What should I include in a bug report?</h3>
+          <p>
+            To help resolve issues swiftly, please mention:
+          </p>
+          <ul style="margin: 10px 0 15px 1.5rem; line-height: 1.6;">
+            <li>Your macOS version (e.g. macOS 15.6 Sequoia)</li>
+            <li>Mac model (Apple Silicon or Intel)</li>
+            <li>The algorithm or transition rule causing the problem</li>
+            <li>The starting tape sequence</li>
+          </ul>
+          <div class="brutal-btn-row">
+            <a href="mailto:support@michaltalaga.me?subject=Turingly%20Bug%20Report" class="brutal-btn primary">
+              COMPOSE BUG REPORT EMAIL &rarr;
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>&copy; 2026 MICHAŁ TALAGA. ALL RIGHTS RESERVED.</p>
+      <div class="social-links">
+        <a href="index.html">HOME</a>
+        <a href="privacy.html">PRIVACY POLICY</a>
+        <a href="mailto:support@michaltalaga.me">EMAIL SUPPORT</a>
+      </div>
+    </footer>
+
+  </div>
+
+</body>
+</html>
